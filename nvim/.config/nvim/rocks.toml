@@ -1,0 +1,158 @@
+# This is your rocks.nvim plugins declaration file.
+# Here is a small yet pretty detailed example on how to use it:
+#
+# [plugins]
+# nvim-treesitter = "semver_version"  # e.g. "1.0.0"
+
+# List of non-Neovim rocks.
+# This includes things like `toml` or other lua packages.
+[rocks]
+
+# List of Neovim plugins to install alongside their versions.
+# If the plugin name contains a dot then you must add quotes to the key name!
+[plugins]
+"rocks.nvim" = "2.35.2" # rocks.nvim can also manage itself :D
+"rocks-treesitter.nvim" = "1.0.2"
+tree-sitter-toml = "0.0.1"
+"rocks-git.nvim" = "2.0.1"
+"rocks-config.nvim" = "2.1.4"
+tree-sitter-json = "0.0.1"
+tree-sitter-zig = "0.0.1"
+"rocks-lazy.nvim" = "1.0.0"
+
+[plugins.catppuccin]
+name = "catppuccin"
+git = "catppuccin/nvim"
+rev = "v1.7.0"
+config = "plugins.catppuccin"
+
+[plugins."lsp-zero.nvim"]
+git = "vonheikemen/lsp-zero.nvim"
+rev = "v4.x"
+#config = "plugins.lsp-zero.lua"
+
+#[plugins."lazydev.nvim"]
+#git = "folke/lazydev.nvim"
+#rev = "v1.7.1"
+
+#[plugins."luvit-meta"]
+#git = "Bilal2453/luvit-meta"
+
+[plugins.nvim-cmp]
+git = "hrsh7th/nvim-cmp"
+rev = "main"
+event = "InsertEnter"
+
+[plugins.nvim-lspconfig]
+git = "neovim/nvim-lspconfig"
+rev = "v0.1.8"
+event = "BufEnter"
+
+[plugins.cmp-nvim-lsp]
+git = "hrsh7th/cmp-nvim-lsp"
+rev = "main"
+event = "InsertEnter"
+
+[plugins."mason.nvim"]
+git = "williamboman/mason.nvim"
+rev = "v1.9.0"
+
+[plugins."mason-lspconfig.nvim"]
+git = "williamboman/mason-lspconfig.nvim"
+rev = "v1.9.0"
+
+[plugins."dropbar.nvim"]
+git = "bekaboo/dropbar.nvim"
+rev = "v8.6.0"
+
+[plugins.nvim-web-devicons]
+git = "nvim-tree/nvim-web-devicons"
+rev = "v0.99"
+
+[plugins."plenary.nvim"]
+git = "nvim-lua/plenary.nvim"
+rev = "v0.1.4"
+
+[plugins."telescope.nvim"]
+git = "nvim-telescope/telescope.nvim"
+rev = "nvim-0.6"
+
+[plugins."telescope-fzf-native.nvim"]
+git = "nvim-telescope/telescope-fzf-native.nvim"
+
+[plugins."beacon.nvim"]
+git = "danilamihailov/beacon.nvim"
+rev = "v2.0.1"
+
+[plugins.harpoon]
+git = "theprimeagen/harpoon"
+branch = "harpoon2"
+config = "plugins.harpoon.lua"
+
+[plugins."indent-blankline.nvim"]
+git = "lukas-reineke/indent-blankline.nvim"
+rev = "v3.7.1"
+config = "plugins.indent-blankline"
+event = "BufEnter"
+
+#[plugins."nui.nvim"]
+#git = "muniftanjim/nui.nvim"
+#rev = "0.3.0"
+
+#[plugins.nvim-notify]
+#git = "rcarriga/nvim-notify"
+#rev = "v3.9.1"
+
+#[plugins."noice.nvim"]
+#git = "folke/noice.nvim"
+#rev = "v4.4.5"
+#config = "plugins.noice"
+
+[plugins.nvim-surround]
+git = "kylechui/nvim-surround"
+rev = "v2.3.0"
+config = "plugins.nvim-surround"
+event = "BufEnter"
+
+[plugins."rainbow-delimiters.nvim"]
+git = "hiphish/rainbow-delimiters.nvim"
+rev = "v0.4.0"
+config = "plugins.rainbow-delimiters"
+event = "BufEnter"
+
+[plugins."trouble.nvim"]
+git = "folke/trouble.nvim"
+rev = "v3.6.0"
+config = "plugins.trouble"
+event = "BufEnter"
+
+[plugins."which-key.nvim"]
+git = "folke/which-key.nvim"
+rev = "v3.9.0"
+config = "plugins.which-key"
+
+[plugins."mini.icons"]
+git = "echasnovski/mini.icons"
+
+[bundles.lsp]
+items = [
+    "lsp-zero.nvim",
+    "nvim-cmp",
+    "nvim-lspconfig",
+    "cmp-nvim-lsp",
+    "mason.nvim",
+    "mason-lspconfig.nvim",
+]
+config = "plugins.lsp"
+
+[bundles.telescope]
+items = [
+    "plenary.nvim",
+    "telescope.nvim",
+    "telescope-fzf-native.nvim",
+]
+config = "plugins.telescope"
+
+[treesitter]
+auto_highlight = "all"
+auto_install = "prompt"
