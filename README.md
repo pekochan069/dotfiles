@@ -4,7 +4,7 @@
 
 - [GNU Stow](https://www.gnu.org/software/stow/) - dotfile manager
 - [zsh](https://www.zsh.org/) - shell
-- [neovim](https://neovim.io/)0.11+ - editor
+- [neovim](https://neovim.io/) - editor
 - [starship](https://starship.rs/) - prompt
 - [zoxide](https://github.com/ajeetdsouza/zoxide) - better cd
 - [sheldon](https://sheldon.cli.rs/) - zsh plugin manager
